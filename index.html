@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha3812-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha3812-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid app">
+            <br>
+            <h1> CALCULATOR </h1>
+            <div class="row calc-body">
+                <div class="col-12">
+                    <td><input type="text" id="res"></td>
+                    <td align="center"><button class="btn btn-danger btn-set" onclick="ac()">AC</button></td>
+                </div>
+                <div class="col-12">
+                    <td align="center"><button class="btn btn-info btn-set" onclick="show('7')">7</button></td>
+                    <td align="center"><button class="btn btn-primary btn-set" onclick="show('8')">8</button></td>
+                    <td align="center"><button class="btn btn-info btn-set" onclick="show('9')">9</button></td>
+                    <td align="center"><button class="btn btn-secondary btn-set" onclick="show('+')">+</button></td>
+                </div>
+                <div class="col-12">
+                    <td align="center"><button class="btn btn-primary btn-set" onclick="show('4')">4</button></td>
+                    <td align="center"><button class="btn btn-info btn-set" onclick="show('5')">5</button></td>
+                    <td align="center"><button class="btn btn-primary btn-set" onclick="show('6')">6</button></td>
+                    <td align="center"><button class="btn btn-warning btn-set" onclick="show('-')">-</button></td>                    
+                </div>  
+                <div class="col-12">
+                    <td align="center"><button class="btn btn-info btn-set" onclick="show('1')">1</button></td>
+                    <td align="center"><button class="btn btn-primary btn-set" onclick="show('2')">2</button></td>
+                    <td align="center"><button class="btn btn-info btn-set" onclick="show('3')">3</button></td>
+                    <td align="center"><button class="btn btn-secondary btn-set" onclick="show('*')">*</button></td>                    
+                </div> 
+                <div class="col-12">
+                    <td align="center"><button class="btn btn-secondary btn-set" onclick="show('%')">%</button></td>
+                    <td align="center"><button class="btn btn-warning btn-set" onclick="show('0')">0</button></td>
+                    <td align="center"><button class="btn btn-secondary btn-set" onclick="show('/')">/</button></td>
+                    <td align="center"><button class="btn btn-success btn-set" onclick="cal()">=</button></td>                    
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
